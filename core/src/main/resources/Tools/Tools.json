@@ -1,0 +1,88 @@
+{
+  "tools": {
+    "hoe": {
+      "name": "hoe",
+      "actions": ["Plow"],
+      "material": {
+        "base": {"consumption energy": 5},
+        "copper": {"consumption energy": 4, "Cost": 2000, "Upgrade Cost": 2000},
+        "iron": {"consumption energy": 3, "Cost": 5000, "Upgrade Cost": 5000},
+        "gold": {"consumption energy": 2, "Cost": 10000, "Upgrade Cost": 10000},
+        "iridium": {"consumption energy": 1, "Cost": 25000, "Upgrade Cost": 25000}
+      }
+    },
+
+    "pickaxe": {
+      "name": "pickaxe",
+      "actions": ["BreakStone", "RemoveHoeMarks", "ClearDroppedItems"],
+      "material": {
+        "base": {"consumption energy": 5},
+        "copper": {"consumption energy": 4, "Cost": 2000, "Upgrade Cost": 2000},
+        "iron": {"consumption energy": 3, "Cost": 5000, "Upgrade Cost": 5000},
+        "gold": {"consumption energy": 2, "Cost": 10000, "Upgrade Cost": 10000},
+        "iridium": {"consumption energy": 1, "Cost": 25000, "Upgrade Cost": 25000}
+      }
+    },
+    "axe": {
+      "name": "axe",
+      "actions": ["ChopTrees", "ClearBranches"],
+      "material":{
+        "base": {"consumption energy": 5},
+        "copper": {"consumption energy": 4, "Cost": 2000, "Upgrade Cost": 2000},
+        "iron": {"consumption energy": 3, "Cost": 5000, "Upgrade Cost": 5000},
+        "gold": {"consumption energy": 2, "Cost": 10000, "Upgrade Cost": 10000},
+        "iridium": {"consumption energy": 1, "Cost": 25000, "Upgrade Cost": 25000}
+      }
+    },
+
+    "watering can": {
+      "name": "watering can",
+      "actions": ["WaterCrops", "FillWaterContainer"],
+      "material": {
+        "base": {"capacity": 40, "Upgrade Cost": 2000},
+        "copper": {"capacity": 55, "Upgrade Cost": 5000},
+        "iron": {"capacity": 70, "Upgrade Cost": 10000},
+        "gold": {"capacity": 85, "Upgrade Cost": 25000},
+        "iridium": {"capacity": 100}
+      }
+
+    },
+
+    "fishing pole": {
+      "name": "fishing pole",
+      "actions": ["Fishing"],
+      "material": {
+        "training": {"Cost": 25, "consumption energy": 8, "enough level": 0},
+        "bamboo": {"Cost": 500, "consumption energy": 8, "enough level": 0},
+        "fiberglass": {"Cost": 1800, "consumption energy": 6, "enough level": 2},
+        "iridium": {"Cost": 7500, "consumption energy": 4, "enough level": 4}
+      }
+    },
+
+    "scythe": {
+      "name": "scythe",
+      "actions": ["CutGrass", "HarvestCrops"],
+      "consumption energy": 2
+    },
+
+    "shear": {
+      "name": "shear",
+      "actions": ["ShearSheep"],
+      "price": 1000,
+      "consumption energy": 4
+    },
+
+
+    "trash can": {
+      "name": "trash can",
+      "actions": ["RemoveFromInventory"],
+      "material": {
+        "basic":{"Recovery percentage": 0, "Upgrade Cost": 1000},
+        "copper": {"Recovery percentage": 15, "Upgrade Cost": 2500},
+        "iron": {"Recovery percentage": 39, "Upgrade Cost": 5000},
+        "gold": {"Recovery percentage": 45, "Upgrade Cost": 12500},
+        "iridium": {"Recovery percentage": 60}
+      }
+    }
+  }
+}

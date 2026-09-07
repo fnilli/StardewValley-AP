@@ -1,0 +1,13 @@
+[ {
+  "username" : "as",
+  "password" : "as",
+  "nickName" : "as",
+  "email" : "sal@sal.com",
+  "gender" : "female",
+  "gamePlayed" : 0,
+  "logged_in_flag" : true,
+  "userSecurityQuestion" : "q3",
+  "securityAnswer" : "apple",
+  "hasActiveGame" : false,
+  "hero" : "ALEX"
+} ]

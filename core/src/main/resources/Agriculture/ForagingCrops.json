@@ -1,0 +1,140 @@
+[
+  {
+    "name": "Common Mushroom",
+    "season": "Special",
+    "baseSellPrice": 40,
+    "energy": 38
+  },
+  {
+    "name": "Daffodil",
+    "season": "Spring",
+    "baseSellPrice": 30,
+    "energy": 0
+  },
+  {
+    "name": "Dandelion",
+    "season": "Spring",
+    "baseSellPrice": 40,
+    "energy": 25
+  },
+  {
+    "name": "Leek",
+    "season": "Spring",
+    "baseSellPrice": 60,
+    "energy": 40
+  },
+  {
+    "name": "Morel",
+    "season": "Spring",
+    "baseSellPrice": 150,
+    "energy": 20
+  },
+  {
+    "name": "Salmonberry",
+    "season": "Spring",
+    "baseSellPrice": 5,
+    "energy": 25
+  },
+  {
+    "name": "Spring Onion",
+    "season": "Spring",
+    "baseSellPrice": 8,
+    "energy": 13
+  },
+  {
+    "name": "Wild Horseradish",
+    "season": "Spring",
+    "baseSellPrice": 50,
+    "energy": 13
+  },
+  {
+    "name": "Fiddlehead Fern",
+    "season": "Summer",
+    "baseSellPrice": 90,
+    "energy": 25
+  },
+  {
+    "name": "Grape",
+    "season": "Summer",
+    "baseSellPrice": 80,
+    "energy": 38
+  },
+  {
+    "name": "Red Mushroom",
+    "season": "Summer",
+    "baseSellPrice": 75,
+    "energy": -50
+  },
+  {
+    "name": "Spice Berry",
+    "season": "Summer",
+    "baseSellPrice": 80,
+    "energy": 25
+  },
+  {
+    "name": "Sweet Pea",
+    "season": "Summer",
+    "baseSellPrice": 50,
+    "energy": 0
+  },
+  {
+    "name": "Blackberry",
+    "season": "Fall",
+    "baseSellPrice": 25,
+    "energy": 25
+  },
+  {
+    "name": "Chanterelle",
+    "season": "Fall",
+    "baseSellPrice": 160,
+    "energy": 75
+  },
+  {
+    "name": "Hazelnut",
+    "season": "Fall",
+    "baseSellPrice": 40,
+    "energy": 38
+  },
+  {
+    "name": "Purple Mushroom",
+    "season": "Fall",
+    "baseSellPrice": 90,
+    "energy": 30
+  },
+  {
+    "name": "Wild Plum",
+    "season": "Fall",
+    "baseSellPrice": 80,
+    "energy": 25
+  },
+  {
+    "name": "Crocus",
+    "season": "Winter",
+    "baseSellPrice": 60,
+    "energy": 0
+  },
+  {
+    "name": "Crystal Fruit",
+    "season": "Winter",
+    "baseSellPrice": 150,
+    "energy": 63
+  },
+  {
+    "name": "Holly",
+    "season": "Winter",
+    "baseSellPrice": 80,
+    "energy": -37
+  },
+  {
+    "name": "Snow Yam",
+    "season": "Winter",
+    "baseSellPrice": 100,
+    "energy": 30
+  },
+  {
+    "name": "Winter Root",
+    "season": "Winter",
+    "baseSellPrice": 70,
+    "energy": 25
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "spring": [
+    "cauliflower",
+    "parsnip",
+    "potato",
+    "blue",
+    "jazz",
+    "tulip"
+  ],
+  "summer": [
+    "corn",
+    "hot",
+    "pepper",
+    "radish",
+    "wheat",
+    "poppy",
+    "sunflower",
+    "summer",
+    "spangle"
+  ],
+  "fall": [
+    "artichoke",
+    "corn",
+    "eggplant",
+    "pumpkin",
+    "sunflower",
+    "fairy",
+    "rose"
+  ],
+  "winter": [
+    "powdermelon"
+  ]
+}

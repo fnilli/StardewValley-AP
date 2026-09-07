@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Quartz",
+    "description": "A clear crystal commonly found in caves and mines.",
+    "sell_price": 25
+  },
+  {
+    "name": "Earth Crystal",
+    "description": "A resinous substance found near the surface.",
+    "sell_price": 50
+  },
+  {
+    "name": "Frozen Tear",
+    "description": "A crystal fabled to be the frozen tears of a yeti.",
+    "sell_price": 75
+  },
+  {
+    "name": "Fire Quartz",
+    "description": "A glowing red crystal commonly found near hot lava.",
+    "sell_price": 100
+  },
+  {
+    "name": "Emerald",
+    "description": "A precious stone with a brilliant green color.",
+    "sell_price": 250
+  },
+  {
+    "name": "Aquamarine",
+    "description": "A shimmery blue-green gem.",
+    "sell_price": 180
+  },
+  {
+    "name": "Ruby",
+    "description": "A precious stone that is sought after for its rich color and beautiful luster.",
+    "sell_price": 250
+  },
+  {
+    "name": "Amethyst",
+    "description": "A purple variant of quartz.",
+    "sell_price": 100
+  },
+  {
+    "name": "Topaz",
+    "description": "Fairly common but still prized for its beauty.",
+    "sell_price": 80
+  },
+  {
+    "name": "Jade",
+    "description": "A pale green ornamental stone.",
+    "sell_price": 200
+  },
+  {
+    "name": "Diamond",
+    "description": "A rare and valuable gem.",
+    "sell_price": 750
+  },
+  {
+    "name": "Prismatic Shard",
+    "description": "A very rare and powerful substance with unknown origins.",
+    "sell_price": 2000
+  },
+  {
+    "name": "Copper",
+    "description": "A common ore that can be smelted into bars.",
+    "sell_price": 5
+  },
+  {
+    "name": "Iron",
+    "description": "A fairly common ore that can be smelted into bars.",
+    "sell_price": 10
+  },
+  {
+    "name": "Gold",
+    "description": "A precious ore that can be smelted into bars.",
+    "sell_price": 25
+  },
+  {
+    "name": "Iriduim",
+    "description": "An exotic ore with many curious properties. Can be smelted into bars.",
+    "sell_price": 100
+  },
+  {
+    "name": "Coal",
+    "description": "A combustible rock that is useful for crafting and smelting.",
+    "sell_price": 15
+  }
+]
