@@ -33,7 +33,7 @@ import static com.badlogic.gdx.math.Rectangle.tmp;
 public class GameAssetManager {
     private static GameAssetManager gameAssetManager;
 
-    private final Skin skin = new Skin(Gdx.files.internal("assets/skin-rainbow/rainbow-ui.json"));
+    private final Skin skin = new Skin(Gdx.files.internal("skin-rainbow/rainbow-ui.json"));
 
     private final String crop = "Foraging/Grape.png";
     private final String tree = "Trees/Pine_Stage_4.png";

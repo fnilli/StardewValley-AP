@@ -149,7 +149,7 @@ public class GameMenuController {
 //            return new Result(false, "no active game!");
 //        }
 //        Game game = App.getActiveGame();
-        GameData loaded = LoadManager.load("savefile.json");
+        GameData loaded = LoadManager.load("../data/savefile.json");
         if (loaded != null) {
 //            System.out.println("Welcome back, " + loaded.user.getUsername());
             return new Result(true, "Welcome back, " + loaded.user.getUsername());
@@ -172,7 +172,7 @@ public class GameMenuController {
             //TODO save game : done
             Game currentGame = App.getActiveGame();
             GameData data = new GameData(currentGame.getCurrentPlayer().getUser(), currentGame.getCurrentPlayer(), currentGame);
-            SaveManager.save(data, "savefile.json");
+            SaveManager.save(data, "../data/savefile.json");
 
             App.setCurrentMenu(Menu.ExitMenu);
             return new Result(true, "bye bye");
@@ -182,7 +182,7 @@ public class GameMenuController {
             //TODO save game : done
             Game currentGame = App.getActiveGame();
             GameData data = new GameData(currentGame.getCurrentPlayer().getUser(), currentGame.getCurrentPlayer(), currentGame);
-            SaveManager.save(data, "savefile.json");
+            SaveManager.save(data, "../data/savefile.json");
 
             App.setCurrentMenu(Menu.ExitMenu);
             return new Result(true, "bye bye");

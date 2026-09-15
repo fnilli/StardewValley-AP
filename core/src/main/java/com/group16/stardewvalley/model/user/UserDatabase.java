@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class UserDatabase {
 
-    private static final String USER_DB_PATH = "users.json"; // path relative to assets folder or local storage
+    private static final String USER_DB_PATH = "../data/users.json"; // path relative to assets folder or local storage
     private static final Json json = new Json();
 
     public static void loadUsers() {
