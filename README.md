@@ -3,6 +3,8 @@
 > A **Java implementation of a Stardew Valley-inspired farming simulation**, featuring core gameplay systems, a libGDX graphical interface, and real-time network multiplayer for up to four players over a client-server architecture.
 > Developed across three progressive phases as the final project for the Advanced Programming course. 🌾
 
+![Stardew Valley Gameplay](documents/images/network.png)
+
 ## 🎮 Features
 
 **Graphical gameplay (libGDX)**
@@ -10,12 +12,16 @@
 * HUD with clock, energy bar, currency, and active buffs; drag-and-drop inventory
 * Menu system for start/login/inventory/crafting/cooking/shops, all rendered with libGDX Scene2D
 
+![Indoor Gameplay and UI](documents/images/home.png)
+
 **Real-time network multiplayer**
 * Client-server architecture: the server holds authoritative game state and logic, clients render the graphical UI from server responses, with multithreading handling concurrent players
 * Lobby system — create/join public or private (password-protected) lobbies, up to 4 players, with an admin role and auto-cleanup of idle lobbies
 * Real-time (not turn-based) play once online: simultaneous movement, live map sync, player interactions (gifting, hugging, marriage), and shared shop inventory across all connected clients
 * In-game public/private chat, live scoreboard, group quests, and player voting/kick system
 * Authentication and disconnect/reconnect handling
+
+![Player Profiles](documents/images/profileMenu.png)
 
 **Core gameplay**
 * Turn-based single-device loop with hourly / day / season progression
@@ -27,6 +33,8 @@
 * 5 romanceable NPCs with friendship levels and a full marriage system
 * Tile-based world map (300×200) with BFS pathfinding and terrain-aware movement costs
 * JSON-based save/load system with automatic asset manifest generation
+
+![Cooking System](documents/images/food.png)
 
 ## 🛠️ Technologies
 
@@ -75,9 +83,11 @@ From the project root:
 ```
 This compiles the `core` module and launches the LWJGL3 desktop client, opening the game window with the full graphical interface: tile-based world rendering, HUD (clock, energy, currency, buffs), menus, and player sprites.
 
+![Start Menu](documents/images/startMenu.png)
+
 ### Playing in multiplayer (network)
 Up to **four players** can join the same session over the network, each from their own device:
-* Start the server so it can accept client connections. 
+* Start the server so it can accept client connections.
 * Launch a client per player with `./gradlew :lwjgl3:run`, log in / sign up, then create or join a **lobby** from the lobby menu (public or private/password-protected).
 * Once the lobby host starts the game, all connected players play **simultaneously in real time** — no turn order — sharing the same live map, shop inventories, chat, and player interactions.
 
@@ -110,6 +120,6 @@ Up to **four players** can join the same session over the network, each from the
 Department of Computer Engineering
 
 **Course:** Advanced Programming
-**Academic Year:** _[fill in]_
+**Academic Year:** _2025_
 
 **Instructor:** Dr. Mohammad Amin Fazli
