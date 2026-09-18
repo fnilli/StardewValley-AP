@@ -193,6 +193,7 @@ public class GameController {
                         Result result = agricultureController.planting(seed, targetX, targetY);
                         if (!result.isSuccessful()) {
                             System.out.println(result);
+                            GameScreen.getGameScreen().getController().showErrorPopup(result.message());
                         }
                     }
                     else targetTile.setItem(player.getCurrentThing());
@@ -284,7 +285,7 @@ public class GameController {
                 GameScreen.getGameScreen().toggleShowTools();
                 return true;
             case Input.Keys.P:
-                player.learnRecipe(FoodFactory.pizza());
+                player.learnRecipe(FoodFactory.tripleShotEspresso());
                 return true;
             case Input.Keys.F4:
                 return true;

@@ -11,6 +11,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.group16.stardewvalley.controller.agriculture.AgricultureController;
 import com.group16.stardewvalley.model.agriculture.*;
 import com.group16.stardewvalley.model.animal.Animal;
+import com.group16.stardewvalley.model.animal.Fish;
 import com.group16.stardewvalley.model.app.App;
 import com.group16.stardewvalley.model.crafting.CraftingRecipes;
 import com.group16.stardewvalley.model.food.Food;
@@ -33,7 +34,7 @@ import static com.badlogic.gdx.math.Rectangle.tmp;
 public class GameAssetManager {
     private static GameAssetManager gameAssetManager;
 
-    private final Skin skin = new Skin(Gdx.files.internal("skin-rainbow/rainbow-ui.json"));
+    private final Skin skin = new Skin(Gdx.files.internal("assets/skin-rainbow/rainbow-ui.json"));
 
     private final String crop = "Foraging/Grape.png";
     private final String tree = "Trees/Pine_Stage_4.png";
@@ -81,12 +82,10 @@ public class GameAssetManager {
 
 
     private GameAssetManager(){
-        /*
-        backgroundMusic = Gdx.audio.newMusic(Gdx.files.internal("musics/alex-productions-epic-cinematic-gaming-cyberpunk-reset(chosic.com).mp3"));
-        backgroundMusic.setLooping(true);
-        backgroundMusic.setVolume(0.5f);
-        backgroundMusic.play();
-         */
+//        backgroundMusic = Gdx.audio.newMusic(Gdx.files.internal("musics/alex-productions-epic-cinematic-gaming-cyberpunk-reset(chosic.com).mp3"));
+//        backgroundMusic.setLooping(true);
+//        backgroundMusic.setVolume(0.5f);
+//        backgroundMusic.play();
     }
 
     public static GameAssetManager getGameAssetManager(){
@@ -270,6 +269,18 @@ public class GameAssetManager {
             if (!toolTextures.containsKey(name)) {
                 try {
                     Texture texture = new Texture("tools/" + name + ".png");
+                    toolTextures.put(name, texture);
+                } catch (Exception e) {
+                    toolTextures.put(name, seedTexture);
+                }
+            }
+            return toolTextures.get(name);
+        }
+        else if (item instanceof Fish fish) {
+            String name = fish.getName();
+            if (!toolTextures.containsKey(name)) {
+                try {
+                    Texture texture = new Texture("Fish/" + name + ".png");
                     toolTextures.put(name, texture);
                 } catch (Exception e) {
                     toolTextures.put(name, seedTexture);

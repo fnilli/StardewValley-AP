@@ -18,6 +18,7 @@ import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Scaling;
 import com.group16.stardewvalley.model.app.App;
+import com.group16.stardewvalley.model.food.FoodFactory;
 import com.group16.stardewvalley.model.graphics.GameAssetManager;
 import com.group16.stardewvalley.model.items.Flower;
 import com.group16.stardewvalley.model.items.Item;
@@ -81,6 +82,13 @@ public class Inventory {
         items.put(newAse, 1);
         Flower flower = new Flower("flower", 0);
         items.put(Seeds.APPLE_SAPLING, 1);
+        items.put(Seeds.PUMPKIN_SEEDS, 1);
+        items.put(Seeds.MIXED_SEED, 2);
+        items.put(Seeds.MANGO_SAPLING, 1);
+        items.put(new Fertilizer(FertilizerType.SPEED_GRO.getName(), 40, FertilizerType.SPEED_GRO), 1);
+        for (Ingredient ingredient : FoodFactory.tripleShotEspresso().getIngredients().keySet()){
+            items.put(new FoodIngredient(ingredient.getName(), 50, ingredient), 1);
+        }
     }
 
     public void showTools(Stage stage, Skin skin) {

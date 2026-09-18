@@ -39,6 +39,9 @@ public class Crop {
         this.isMature = false;
         this.isHarvested = false;
         this.isColossal = false;
+        if (cropType.isCanBecomeGiant()){
+            isColossal = true;
+        }
         this.isFertilized = false;
         this.isWateredYesterday = true;
     }

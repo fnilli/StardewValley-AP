@@ -8,6 +8,7 @@ import com.group16.stardewvalley.model.animal.ProductQuality;
 import com.group16.stardewvalley.model.app.App;
 import com.group16.stardewvalley.model.app.Game;
 import com.group16.stardewvalley.model.map.Tile;
+import com.group16.stardewvalley.model.map.TileType;
 import com.group16.stardewvalley.model.user.Player;
 
 import java.util.ArrayList;
@@ -48,7 +49,7 @@ public class FishingPole extends Gadget{
 
         // هیچکار نتواند بکند : روی زمین خالی مثلا چوب ماهیگیری انداخته
 
-        if (targetTile == null) {
+        if (targetTile == null || targetTile.getType() != TileType.Lake) {
             player.decreaseEnergy(requiredEnergy - 1);
             return new Result(false, "There is no lake here!");
         }
@@ -79,7 +80,7 @@ public class FishingPole extends Gadget{
         for (int i = 0; i < fishNumber; i++) {
             index = random.nextInt(fishes.size());
             fishesToUse.add(fishes.get(index));
-//            game.getCurrentPlayer().getInventory().addItem(new Fish(fishes.get(index), ,quality), 1);
+            game.getCurrentPlayer().getInventory().addItem(new Fish(fishes.get(index), 40,quality), 1);
         }
         game.getCurrentPlayer().addFishingAbilityScore(5);
         StringBuilder result = new StringBuilder();
