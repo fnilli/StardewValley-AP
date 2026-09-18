@@ -270,7 +270,7 @@ public class GameScreen implements Screen, InputProcessor {
             TimeDate.getInstance(App.getActiveGame()).advanceTenMinutes();
 
             tenMinuteCounter++;
-            Main.getMain().getGameScreen().getStage().clear();
+            GameScreen.getGameScreen().getStage().clear();
             totalGameTime = 0f;
 
             if (tenMinuteCounter >= 6) {
