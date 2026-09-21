@@ -3,7 +3,6 @@
 > A **Java implementation of a Stardew Valley-inspired farming simulation**, featuring core gameplay systems, a libGDX graphical interface, and real-time network multiplayer for up to four players over a client-server architecture.
 > Developed across three progressive phases as the final project for the Advanced Programming course. 🌾
 
-![Stardew Valley Gameplay](documents/images/network.png)
 
 ## 🎮 Features
 
@@ -12,7 +11,6 @@
 * HUD with clock, energy bar, currency, and active buffs; drag-and-drop inventory
 * Menu system for start/login/inventory/crafting/cooking/shops, all rendered with libGDX Scene2D
 
-![Indoor Gameplay and UI](documents/images/home.png)
 
 **Real-time network multiplayer**
 * Client-server architecture: the server holds authoritative game state and logic, clients render the graphical UI from server responses, with multithreading handling concurrent players
@@ -21,7 +19,6 @@
 * In-game public/private chat, live scoreboard, group quests, and player voting/kick system
 * Authentication and disconnect/reconnect handling
 
-![Player Profiles](documents/images/profileMenu.png)
 
 **Core gameplay**
 * Turn-based single-device loop with hourly / day / season progression
@@ -34,7 +31,6 @@
 * Tile-based world map (300×200) with BFS pathfinding and terrain-aware movement costs
 * JSON-based save/load system with automatic asset manifest generation
 
-![Cooking System](documents/images/food.png)
 
 ## 🛠️ Technologies
 
@@ -83,7 +79,6 @@ From the project root:
 ```
 This compiles the `core` module and launches the LWJGL3 desktop client, opening the game window with the full graphical interface: tile-based world rendering, HUD (clock, energy, currency, buffs), menus, and player sprites.
 
-![Start Menu](documents/images/startMenu.png)
 
 ### Playing in multiplayer (network)
 Up to **four players** can join the same session over the network, each from their own device:
@@ -123,3 +118,11 @@ Department of Computer Engineering
 **Academic Year:** _2025_
 
 **Instructor:** Dr. Mohammad Amin Fazli
+
+
+![Stardew Valley Gameplay](documents/images/network.png)
+![Indoor Gameplay and UI](documents/images/home.png)
+![Player Profiles](documents/images/profileMenu.png)
+![Start Menu](documents/images/startMenu.png)
+![Cooking System](documents/images/food.png)
+
